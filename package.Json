@@ -1,5 +1,8 @@
 {
     "name": "Exercise 3: Import and export",
-    "dependencies": {},
+    "dependencies": {
+        "fs": "^0.0.1-security",
+        "unique-string": "^3.0.0"
+    },
     "type": "module"
 }

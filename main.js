@@ -1,6 +1,8 @@
-import saveUser from './user.js';
+import user from './user.js';
 
-saveUser("Hermiony", "Granger", "hg@gmail.com", 19);
-saveUser("Agatha", "Timothy", "at@gmail.com", 19);
-saveUser("Stewkesburg", "William", "sw@gmail.com", 19);
-saveUser("Harry", "Potter", "hp@gmail.com", 19);
+// saveUser("Hermiony", "Granger", "hg@gmail.com", 19);
+// saveUser("Agatha", "Timothy", "at@gmail.com", 19);
+// saveUser("Stewkesburg", "William", "sw@gmail.com", 19);
+// saveUser("Harry", "Potter", "hp@gmail.com", 19);
+
+console.log(user.findUser("hp@gmail.com"));

@@ -11,4 +11,26 @@ function saveUser(firstname, lastname, email, age){
     }
 }
 
-export default saveUser
+//function to find user in users.txt
+function findUser(email){
+    let userList = fs.readFileSync("users.txt", "utf8").split("\n");
+    let foundUser = [];
+    for(let user of userList){
+        if(user.split(",")[2] == email){
+            foundUser.push({
+                firstname: user.split(",")[0],
+                lastname: user.split(",")[1],
+                email: user.split(",")[2],
+                age: user.split(",")[3]
+            });
+        }
+    }
+    
+    return {
+        users: foundUser,
+        count: foundUser.length
+    }
+    
+}
+
+export default {saveUser, findUser}
